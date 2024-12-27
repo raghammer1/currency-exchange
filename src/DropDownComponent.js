@@ -4,9 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export default function DropDownComponent({ items }) {
-  const [currency, setCurrency] = React.useState('');
-
+export default function DropDownComponent({ items, currency, setCurrency }) {
   const handleChange = (event) => {
     setCurrency(event.target.value);
   };
